@@ -45,4 +45,7 @@ where $l_i$ is a literal and $\sigma$ is the most general unifier of $P(t_1,\dot
 
 We implement a specific class for the clause objects and we use the clauses to represent skolemized FOL formulas in a compact way. Therefore the universal quantifiers at the beginning of the formulas are implicit and each clause represent a disjunction of predicates, so that a set of clauses represent a conjunction of clauses.
 
+Our implementation is based on the following diagram. 
 
+
+We give in input to the Binary Resolution Algorithm the two clauses and we consider every possible couple made of one literal from the first clause and the other from the second clause. If one literal is the negation of a predicate and the other literal is a predicate having the same name, then we proceed by the removal of the literals if the predicates are exactly the same, otherwise we try to unify them and then remove them.
