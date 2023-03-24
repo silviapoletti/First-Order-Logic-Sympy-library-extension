@@ -7,4 +7,6 @@ This work is an extention of [Filip Šamánek - "Implementation of FOL algorithm
 
 In the Sympy library we can already find a module for Propositional Logic. The aim of the project is to expand the library to support FOL: see the diagram below.
 
-
+<p align="center">
+  <img src="https://github.com/silviapoletti/Image-colorization-methods-review/blob/9978d74548e1f96ac6f0b22f16671cf814932555/report/datasets.png" width="60%"/>
+</p>
