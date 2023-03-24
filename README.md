@@ -47,5 +47,8 @@ We implement a specific class for the clause objects and we use the clauses to r
 
 Our implementation is based on the following diagram. 
 
+<p align="center">
+  <img src="https://github.com/silviapoletti/First-Order-Logic-Sympy-library-extension/blob/c4facda7e75df0cf4e7922d3d86010051f44ba2d/slides/most_general_unifier1.png" width="60%"/>
+</p>
 
 We give in input to the Binary Resolution Algorithm the two clauses and we consider every possible couple made of one literal from the first clause and the other from the second clause. If one literal is the negation of a predicate and the other literal is a predicate having the same name, then we proceed by the removal of the literals if the predicates are exactly the same, otherwise we try to unify them and then remove them.
