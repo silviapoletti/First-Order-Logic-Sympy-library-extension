@@ -10,3 +10,9 @@ In the Sympy library we can already find a module for Propositional Logic. The a
 <p align="center">
   <img src="https://github.com/silviapoletti/First-Order-Logic-Sympy-library-extension/blob/7f141a691c3d8cc51c54692ac8896aeeb1364778/extension_diagram.png" width="70%"/>
 </p>
+
+### Grounding
+A formula is ground when it does not contain any variable. For grounding we only consider closed formulas in which there are no free occurrences of variables. The following shows how grounding is performed in case of a universal quantifier and an existential quantifier:
+$$\forall x\phi(x)\rightarrow \phi(t_1) \land \phi(t_2) \land \dots \land \phi(t_n) $$
+$$\exist x\phi(x)\rightarrow \phi(t_1) \lor \phi(t_2) \lor \dots \lor \phi(t_n) $$
+In this way we're able to reduce FOL formulas to propositional logic formulas by considering conjunctions and disjunctions.
