@@ -31,8 +31,8 @@ Consider the following definitions:
 The implementation can be described as follows:
 
 <p align="center">
-  <img src="https://github.com/silviapoletti/First-Order-Logic-Sympy-library-extension/blob/c4facda7e75df0cf4e7922d3d86010051f44ba2d/slides/most_general_unifier1.png" width="55%"/>
-  <img src="https://github.com/silviapoletti/First-Order-Logic-Sympy-library-extension/blob/529be03295026fc7a61281d2a153ab8dfb35ee74/slides/most_general_unifier2.png" width="55%"/>
+  <img src="https://github.com/silviapoletti/First-Order-Logic-Sympy-library-extension/blob/c4facda7e75df0cf4e7922d3d86010051f44ba2d/slides/most_general_unifier1.png" width="50%"/>
+  <img src="https://github.com/silviapoletti/First-Order-Logic-Sympy-library-extension/blob/529be03295026fc7a61281d2a153ab8dfb35ee74/slides/most_general_unifier2.png" width="50%"/>
 </p>
 
 
