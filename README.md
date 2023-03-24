@@ -37,9 +37,7 @@ The implementation can be described as follows:
 
 ### Binary resolution rule
 
-The binary resolution rule is defined as follows:
-
-$$ \frac{\{l_1,\dots,l_n,P(t_1,\dots,t_n)\}\{\not P(u_1,\dots,u_n),l_{n+1},\dots,l_m\}}{\{ l_1,\dots,l_m\}\sigma} $$ where $l_i$ is a literal and $\sigma$ is the most general unifier of $P(t_1,\dots,t_n)$ and $P(u_1,\dots,u_n)$.
+The binary resolution rule is defined as follows: $$ \frac{\{l_1,\dots,l_n,P(t_1,\dots,t_n)\}\{\not P(u_1,\dots,u_n),l_{n+1},\dots,l_m\}}{\{ l_1,\dots,l_m\}\sigma} $$ where $l_i$ is a literal and $\sigma$ is the most general unifier of $P(t_1,\dots,t_n)$ and $P(u_1,\dots,u_n)$.
 
 We implement a specific class for the clause objects and we use the clauses to represent skolemized FOL formulas in a compact way. Therefore the universal quantifiers at the beginning of the formulas are implicit and each clause represent a disjunction of predicates, so that a set of clauses represent a conjunction of clauses.
 
