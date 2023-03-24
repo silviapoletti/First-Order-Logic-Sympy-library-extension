@@ -8,5 +8,5 @@ This work is an extention of [Filip Šamánek - "Implementation of FOL algorithm
 In the Sympy library we can already find a module for Propositional Logic. The aim of the project is to expand the library to support FOL: see the diagram below.
 
 <p align="center">
-  <img src="https://github.com/silviapoletti/First-Order-Logic-Sympy-library-extension/blob/8cc558200842868cc8a525e102dc430aa7ed7312/diagram.png" width="60%"/>
+  <img src="https://github.com/silviapoletti/First-Order-Logic-Sympy-library-extension/blob/7f141a691c3d8cc51c54692ac8896aeeb1364778/extension_diagram.png" width="70%"/>
 </p>
