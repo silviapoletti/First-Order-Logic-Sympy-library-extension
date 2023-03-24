@@ -14,5 +14,19 @@ In the Sympy library we can already find a module for Propositional Logic. The a
 ### Grounding
 A formula is ground when it does not contain any variable. For grounding we only consider closed formulas in which there are no free occurrences of variables. The following shows how grounding is performed in case of a universal quantifier and an existential quantifier:
 $$\forall x\phi(x)\rightarrow \phi(t_1) \land \phi(t_2) \land \dots \land \phi(t_n) $$
-$$\exist x\phi(x)\rightarrow \phi(t_1) \lor \phi(t_2) \lor \dots \lor \phi(t_n) $$
+$$\exists x\phi(x)\rightarrow \phi(t_1) \lor \phi(t_2) \lor \dots \lor \phi(t_n) $$ where $x$ is a variable symbol and $\phi(x)$ is a formula depending on $x$.
 In this way we're able to reduce FOL formulas to propositional logic formulas by considering conjunctions and disjunctions.
+
+Our implementation goes through the following steps: First we assume to have different symbols for each quantifier. Then we transform the formula in its Negated Normal Form by taking the negations in front of the quantifiers and dragging them in the internal formula and than transform the result in the Conjunctive Normal Form. Then we pass to the Prenex Normal Form by moving all the quantifiers at the beginning of the formula, taking care of not changing the meaning of the formula. 
+
+Since this process is very delicate and complicated to be implemented, then the classes wich derive from the class Formula needed to be built in a sophisticated way. These classes are Logical Connectives, Predicates and Quantifiers, which all have a method for the graphic interface using elegant formulations in latex, a method for the negation, a method for the negated normal form and a method for the grounding. 
+
+### Most General Unifier
+Consider the following definitions:
+- $\sigma$ is a unifier of terms $t$ and $u$ is $t\sigma=u\sigma$;
+- $\sigma$ is more general than $\theta$ if $\theta=\sigma\cdot\phi$ for some substituion \phi;
+- $\sigma$ is a most general unifier of terms $t$ and $u$ if it is a unifier and is more general than all the other unifiers.
+
+The implementation can be described as follows:
+
+
