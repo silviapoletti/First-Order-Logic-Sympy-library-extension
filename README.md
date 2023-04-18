@@ -1,5 +1,9 @@
 # First Order Logic - Sympy library extension
 
+<a target="_blank" href="https://colab.research.google.com/github/silviapoletti/First-Order-Logic-Sympy-library-extension/blob/b8e7f28cdda110effcb398bc7134336d45204372/FOL.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 This project define some classes (variables, quantifiers, predicates and clauses) and methods for First Order Logic (FOL) that extend the Propositional Logic semantics and methods that are built-in in the Sympy library. In particular, the project concerns the implementation of a method for getting the grounding of a FOL formula, a method for finding the most general unifier between two terms and a method for applying the Binary Resolution Rule on two clauses.
 The whole implementation is contained in the Python notebook. It also includes a user-friendly interface (that uses LaTeX) for the visualization of the formulas. 
 
